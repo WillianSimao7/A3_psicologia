@@ -1,0 +1,63 @@
+cadastro 
+   professores:
+	id(int 3)
+	nome(varchar 255)
+	cpf(int 11)
+	senha(varchar 255)
+	email(@ulife)(varchar 255)
+	telefone(int 11)
+	nivel(varchar 9) (tem que ser 'Professor', com P maiusculo)
+
+   cadastro para alunos:
+	//professor faz cadastro de aluno
+	id(int 3)
+	nome(varchar 255)
+	cpf(int 11)
+	ra(int 9)
+	senha(data nascimento ulife)(int 8)
+	email(@ulife para login)(varchar 255)	
+	telefone(int 11)
+	nivel(varchar 9)
+
+    cadastro adm:
+	id (int 3)
+	login(varchar 255)
+	senha(varchar 255)
+	nivel(varchar 9)
+	
+	
+
+   cadastro de paciente
+	//aluno cadastra
+	id(int 3)
+	data_abertura(data)
+	nome(varchar 255)
+	data_nascimento(data)
+	genero (M, F, outro)(checkbox)
+	endereço(varchar 255)
+	telefone(int 11)
+	email(varchar 150)
+	contato_emergencia(int 11)
+	escolaridade(varchar 50)
+	ocupação(varchar 50)
+	necessidade(especial/cognitiva/locomoção/visao/audicao/outras:)(varchar 255)
+	estagiario(varchar 255)
+	orientador(varchar 255)
+
+
+    prontuario:
+	id
+	id_paciente
+	data_hora(data)
+	avaliacao(text)
+	historico_familiar(text)
+	historico_social(text)
+
+    sessões - 
+	id (int 3)
+	id_prontuario(FK)
+	data(data)
+	sessao_text(text)
+	anotacao(int 255)
+
+
