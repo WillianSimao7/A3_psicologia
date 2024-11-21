@@ -2,7 +2,7 @@
 include('config.php');
 session_start();
 
-if(@_$REQUEST['botao'] == "Entrar"){
+if(@$_REQUEST['botao'] == "Entrar"){
     $login = $_POST['login'];
     $senha = md5($_POST['senha']);
 
@@ -14,3 +14,12 @@ if(@_$REQUEST['botao'] == "Entrar"){
     }
 }
 ?>
+
+<hmtml>
+<body>
+    <form action=# method=post>
+
+    Login:<input type=text name=login>
+    Senha:<input type=text name=senha>
+    <input type=submit name=botao value=Entrar>
+</form>
