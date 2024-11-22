@@ -20,3 +20,18 @@ if(isset($_POST ['botao']) && $_POST['botao'] == "Cadastrar"){
     }
 }
 ?>
+
+<html>
+    <body>
+    <form action=# method=post>
+
+Nome completo:<input type=text name=nome>
+CPF:<input type=number name=cpf>
+RA:<input type=number name=ra>
+Senha:<input type=text name=senha>
+Email:<input type=text name=email>
+Telefone:<input type=number name=telefone>
+Nivel:<input type=text name=nivel>
+<input type=submit name=botao value=Cadastrar>
+
+</form>

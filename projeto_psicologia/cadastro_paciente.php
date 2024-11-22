@@ -27,3 +27,23 @@ if (isset($_POST['botao']) && $_POST['botao'] == "Cadastrar"){
     }
 }
 ?>
+
+<html>
+    <body>
+    <form action=# method=post>
+
+Data de Abertura: <input type=date name=data_abertura>
+Nome Completo:<input type=text name=nome>
+Data de nascimento:<input type="date" name=data_nascimento>
+Genero:<input type=text name=genero>
+Endereço:<input type=text name=endereco>
+Telefone:<input type=number name=telefone>
+Email: <input type=text name=email>
+Contato Emergencial: <input type=number name=contato_emergencial>
+Escolaridade: <input type=text name=escolaridade>
+Ocupação: <input type=text name=ocupacao>
+Necessidade: <input type=text name=necessidade>
+Estagiário: <input type=text name=estagiario>
+Orientador: <input type=text name=orientador>
+<input type=submit name=botao value=Cadastrar>
+        </form>
