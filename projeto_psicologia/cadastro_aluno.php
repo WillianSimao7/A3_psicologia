@@ -6,7 +6,7 @@ if (isset($_POST['botao']) && $_POST['botao'] == "Cadastrar") {
     $nome = mysqli_real_escape_string($con, $_POST['nome']);
     $cpf = mysqli_real_escape_string($con, $_POST['cpf']);
     $ra = mysqli_real_escape_string($con, $_POST['ra']);
-    $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT); // Criptografa a senha
+    $senha = $_POST['senha']; // Criptografa a senha
     $email = mysqli_real_escape_string($con, $_POST['email']);
     $telefone = mysqli_real_escape_string($con, $_POST['telefone']);
     $professor_email = mysqli_real_escape_string($con, $_POST['professor_email']); // Email do professor

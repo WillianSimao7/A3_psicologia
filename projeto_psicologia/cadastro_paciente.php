@@ -135,6 +135,7 @@ if (isset($_POST['botao']) && $_POST['botao'] == "Cadastrar") {
         <h1>Cadastrar Paciente</h1>
 
         <form action="#" method="post">
+
             <label for="data_abertura">Data de Abertura:</label>
             <input type="date" name="data_abertura" required>
 
